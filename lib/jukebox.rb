@@ -31,11 +31,19 @@ end
 
 def play(songs)
   puts "Please enter a command"
+<<<<<<< HEAD
   song_to_play = gets.chomp
   if (1..9).to_a.include?(song_to_play.to_i)
     puts "Playing #{songs[song_to_play.to_i-1]}"
   elsif
    puts "Playing #{song_to_play}"
+=======
+  now_playing = gets.chomp
+  if (1..9).to_a.include?(now_playing.to_i)
+    puts "Playing #{songs[now_playing.to_i-1]}"
+  elsif
+   puts "Playing #{now_playing}"
+>>>>>>> 7ebf52cfca1d0e035b1f3b18037ffbf0fd5bcf5f
    elsif
    puts "Invalid input, please try again"
  end
